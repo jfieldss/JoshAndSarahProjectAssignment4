@@ -71,7 +71,7 @@ if (isset($_POST["submit"])){
  </head><body><br />
   <div class="container">
    <div class="col-md-6" style="margin:0 auto; float:none;">
-    <form method="post" action="index.php">
+    <form method="post" action="create.php">
  <h3 align="center">Car Submission</h3>
      <br />
      <?php echo $error; ?>
@@ -101,11 +101,9 @@ if (isset($_POST["submit"])){
      </div>
      <div class="form-group" align="center">
       <input type="submit" name="submit" class="btn btn-info" value="Submit" />
-         <form action="index.php">
-         <input type="submit" value="Go back to index page" />
-         </form>
      </div>
     </form>
+        <p align="center"><a href="index.php" class="btn btn-primary btn-lg active" role="button">Back to Index Page</a></p>
    </div>
   </div>
  </body>
